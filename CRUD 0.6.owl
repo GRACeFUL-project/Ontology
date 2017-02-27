@@ -1,0 +1,1865 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/blind/ontologies/2016/0/untitled-ontology-26"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/blind/ontologies/2016/0/untitled-ontology-26">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Amenity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ApplyTemporaryFloodDefenceAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BicyclePath"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BioSwale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BlueSpace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BuildingElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CRUDContextElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CRUDHappening"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CRUDNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CRUDNetworkVertex"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CRUDRelation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Canal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CapacityBuildingAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CarParking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeBuildingFeatureAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeCurbElevationAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeFluidNetworkPropertyAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeInsulationAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeOrBuildBarrierAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeOrInstallHorizontalDrainageAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeOrInstallVerticalDrainageAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangePavedCarParkingSizeAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangePavedSurfaceAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangePumpCapacityAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeRoadElevationAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeRoadSizeAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeSewerStorageCapacityAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeSideWalkElevationAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeSoilInfiltrationCapacity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeSpaceCoolingCapacityAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeSpaceInAndOutflowAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeSpaceStorageAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeStorageOnStreetAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeSurfacePermeabilityAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeSurfaceReflectivenessAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeToFountainAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeToGreenRoofStorageAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeToOpenWaterAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeToParkAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeToTreesAlongRoadAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeToWadiAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeToWaterSquareAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeWaterQualityAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeWaterReuseFeatures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeWaterSavingAppliances"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeWaterStorageBelowBuildingAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CityDistrict"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CombinedSewerSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompositeFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Concentration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CountFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CountPerTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CountPerVolume"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crossing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dike"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DisconnectPavedSurfaceFromSewerSystemAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ditch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmptyGreenSpace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Field"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Filter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FloodDefenceSpace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FloodDefenseNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FloodDefenseNetworkEdge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FloodGate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fountain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Garden"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GeoCoordinate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GreenSpace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeatStressEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InfiltratingFilterSwale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InflatableFloodDefenseConstruction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InstallGutterAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InstallNonReturnValveAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InstallPumpAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InstallRainWaterHarvestingAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LevelFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MassFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MassPerVolume"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MergeSpaceAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeteorologicalEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModelStructureModifyingAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neighborhood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OpenWaterNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OpenWaterNetworkEdge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OuterWall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PackSpaceAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PackedSpace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Park"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParkingGarage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PavedSpace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PavedSquare"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PavedWalkWay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PedestrianSquare"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PermanentFloodDefenseSpace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pipe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PipedFluidNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PipedFluidNetworkEdge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pond"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PotableWaterNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pump"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RatioFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecreationalSpace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResidentialBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#River"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Roof"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SandbagBarrier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SealBuildingAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeperateSewageNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SewerNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sidewalk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoilType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Space"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpaceFeaturesModificationAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SplitSpaceAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StopLogBarrier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Street"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StreetNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StreetNetworkEdge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SubsurfaceSpace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SurfaceFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SymbolicFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TemporaryFloodDefenseSpace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThermalInsulationFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrainForTemporaryFloodDefenceUseAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UrbanHeatIsland"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UrbanSpace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VolumeFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VolumePerTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wadi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterSavingAppliance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterSquare"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Waterfall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WetSurfaceAction"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:BackFlow"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:CloudBurstEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:CoastalAndFluvialFloodEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:CostFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:DroughtEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:FloodEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:GroundWaterFloodEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:HighTemperatureEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:PluvialFloodEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:RainFallEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:ReflectionCapacityFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:Storm"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:SystemEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:TemperatureFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:TimeFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:WaterStressEvent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#canApplyGreenRoof"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#canApplyTemporaryFloodDefences"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasGreenFacade"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRoofCoverage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSurface"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWaterResistantConstruction"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#BioSwale"/>
+        <Class IRI="#Wadi"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InfiltratingFilterSwale"/>
+        <Class IRI="#Wadi"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Action"/>
+        <Class IRI="#CRUDHappening"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amenity"/>
+        <Class IRI="#CRUDContextElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ApplyTemporaryFloodDefenceAction"/>
+        <Class IRI="#ChangeOrInstallHorizontalDrainageAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BicyclePath"/>
+        <Class IRI="#PavedSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BioSwale"/>
+        <Class IRI="#GreenSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BlueSpace"/>
+        <Class IRI="#Space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Building"/>
+        <Class IRI="#Space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BuildingElement"/>
+        <Class IRI="#CRUDContextElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CRUDNetwork"/>
+        <Class IRI="#CRUDContextElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CRUDNetworkVertex"/>
+        <Class IRI="#CRUDContextElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Canal"/>
+        <Class IRI="#BlueSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Canal"/>
+        <Class IRI="#OpenWaterNetworkEdge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CapacityBuildingAction"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CarParking"/>
+        <Class IRI="#PavedSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeBuildingFeatureAction"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeCurbElevationAction"/>
+        <Class IRI="#ChangeStorageOnStreetAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeFluidNetworkPropertyAction"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeInsulationAction"/>
+        <Class IRI="#ChangeBuildingFeatureAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeOrBuildBarrierAction"/>
+        <Class IRI="#ChangeSpaceInAndOutflowAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeOrInstallHorizontalDrainageAction"/>
+        <Class IRI="#ChangeSpaceInAndOutflowAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeOrInstallVerticalDrainageAction"/>
+        <Class IRI="#ChangeSpaceInAndOutflowAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangePavedCarParkingSizeAction"/>
+        <Class IRI="#ChangePavedSurfaceAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangePavedSurfaceAction"/>
+        <Class IRI="#ChangeSpaceInAndOutflowAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangePumpCapacityAction"/>
+        <Class IRI="#ChangeFluidNetworkPropertyAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeRoadElevationAction"/>
+        <Class IRI="#ChangeStorageOnStreetAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeRoadSizeAction"/>
+        <Class IRI="#ChangePavedSurfaceAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeSewerStorageCapacityAction"/>
+        <Class IRI="#ChangeFluidNetworkPropertyAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeSideWalkElevationAction"/>
+        <Class IRI="#ChangeStorageOnStreetAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeSoilInfiltrationCapacity"/>
+        <Class IRI="#ChangeOrInstallVerticalDrainageAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeSpaceCoolingCapacityAction"/>
+        <Class IRI="#SpaceFeaturesModificationAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeSpaceInAndOutflowAction"/>
+        <Class IRI="#SpaceFeaturesModificationAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeSpaceStorageAction"/>
+        <Class IRI="#SpaceFeaturesModificationAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeStorageOnStreetAction"/>
+        <Class IRI="#ChangeSpaceStorageAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeSurfacePermeabilityAction"/>
+        <Class IRI="#ChangeOrInstallVerticalDrainageAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeSurfacePermeabilityAction"/>
+        <Class IRI="#ChangeWaterQualityAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeSurfaceReflectivenessAction"/>
+        <Class IRI="#ChangeSpaceCoolingCapacityAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeToFountainAction"/>
+        <Class IRI="#ChangeSpaceCoolingCapacityAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeToGreenRoofStorageAction"/>
+        <Class IRI="#ChangeSpaceStorageAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeToOpenWaterAction"/>
+        <Class IRI="#ChangeSpaceStorageAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeToParkAction"/>
+        <Class IRI="#ChangeOrInstallVerticalDrainageAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeToParkAction"/>
+        <Class IRI="#ChangeSpaceCoolingCapacityAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeToParkAction"/>
+        <Class IRI="#ChangeSpaceStorageAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeToTreesAlongRoadAction"/>
+        <Class IRI="#ChangeOrInstallVerticalDrainageAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeToTreesAlongRoadAction"/>
+        <Class IRI="#ChangeSpaceCoolingCapacityAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeToTreesAlongRoadAction"/>
+        <Class IRI="#ChangeSpaceStorageAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeToWadiAction"/>
+        <Class IRI="#ChangeSpaceStorageAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeToWaterSquareAction"/>
+        <Class IRI="#ChangeSpaceStorageAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeWaterQualityAction"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeWaterReuseFeatures"/>
+        <Class IRI="#ChangeBuildingFeatureAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeWaterReuseFeatures"/>
+        <Class IRI="#ChangeSpaceInAndOutflowAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeWaterSavingAppliances"/>
+        <Class IRI="#ChangeBuildingFeatureAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeWaterSavingAppliances"/>
+        <Class IRI="#ChangeSpaceInAndOutflowAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeWaterStorageBelowBuildingAction"/>
+        <Class IRI="#ChangeBuildingFeatureAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeWaterStorageBelowBuildingAction"/>
+        <Class IRI="#ChangeSpaceStorageAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#City"/>
+        <Class IRI="#UrbanSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CityDistrict"/>
+        <Class IRI="#UrbanSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CombinedSewerSystem"/>
+        <Class IRI="#SewerNetwork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompositeFactor"/>
+        <Class abbreviatedIRI="owl:CRUDFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Concentration"/>
+        <Class IRI="#CompositeFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CountFactor"/>
+        <Class abbreviatedIRI="owl:CRUDFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CountPerTime"/>
+        <Class IRI="#Flow"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CountPerVolume"/>
+        <Class IRI="#Concentration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crossing"/>
+        <Class IRI="#CRUDNetworkVertex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dike"/>
+        <Class IRI="#FloodDefenseNetworkEdge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dike"/>
+        <Class IRI="#PermanentFloodDefenseSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DisconnectPavedSurfaceFromSewerSystemAction"/>
+        <Class IRI="#ChangeSpaceInAndOutflowAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ditch"/>
+        <Class IRI="#BlueSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ditch"/>
+        <Class IRI="#OpenWaterNetworkEdge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmptyGreenSpace"/>
+        <Class IRI="#GreenSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Field"/>
+        <Class IRI="#GreenSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Filter"/>
+        <Class IRI="#PipedFluidNetworkEdge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FloodDefenceSpace"/>
+        <Class IRI="#Space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FloodDefenseNetwork"/>
+        <Class IRI="#CRUDNetwork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FloodDefenseNetworkEdge"/>
+        <Class IRI="#CRUDRelation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FloodGate"/>
+        <Class IRI="#FloodDefenseNetworkEdge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FloodGate"/>
+        <Class IRI="#PermanentFloodDefenseSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flow"/>
+        <Class IRI="#CompositeFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fountain"/>
+        <Class IRI="#Amenity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fountain"/>
+        <Class IRI="#BlueSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Garden"/>
+        <Class IRI="#GreenSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GeoCoordinate"/>
+        <Class abbreviatedIRI="owl:CRUDFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GreenSpace"/>
+        <Class IRI="#Space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeatStressEvent"/>
+        <Class abbreviatedIRI="owl:SystemEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InfiltratingFilterSwale"/>
+        <Class IRI="#GreenSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InflatableFloodDefenseConstruction"/>
+        <Class IRI="#FloodDefenseNetworkEdge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InflatableFloodDefenseConstruction"/>
+        <Class IRI="#TemporaryFloodDefenseSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InstallGutterAction"/>
+        <Class IRI="#ChangeOrInstallHorizontalDrainageAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InstallNonReturnValveAction"/>
+        <Class IRI="#ChangeFluidNetworkPropertyAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InstallPumpAction"/>
+        <Class IRI="#ChangeFluidNetworkPropertyAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InstallRainWaterHarvestingAction"/>
+        <Class IRI="#ChangeSpaceInAndOutflowAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lake"/>
+        <Class IRI="#BlueSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LevelFactor"/>
+        <Class abbreviatedIRI="owl:CRUDFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MassFactor"/>
+        <Class abbreviatedIRI="owl:CRUDFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MassPerVolume"/>
+        <Class IRI="#Concentration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MergeSpaceAction"/>
+        <Class IRI="#ModelStructureModifyingAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeteorologicalEvent"/>
+        <Class IRI="#CRUDHappening"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModelStructureModifyingAction"/>
+        <Class IRI="#CRUDHappening"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neighborhood"/>
+        <Class IRI="#UrbanSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OpenWaterNetwork"/>
+        <Class IRI="#BlueSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OpenWaterNetwork"/>
+        <Class IRI="#CRUDNetwork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OpenWaterNetworkEdge"/>
+        <Class IRI="#CRUDRelation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OuterWall"/>
+        <Class IRI="#BuildingElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PackSpaceAction"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PackedSpace"/>
+        <Class IRI="#Space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Park"/>
+        <Class IRI="#GreenSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParkingGarage"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PavedSpace"/>
+        <Class IRI="#Space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PavedSquare"/>
+        <Class IRI="#PavedSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PavedWalkWay"/>
+        <Class IRI="#PavedSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PedestrianSquare"/>
+        <Class IRI="#PavedSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PermanentFloodDefenseSpace"/>
+        <Class IRI="#FloodDefenceSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pipe"/>
+        <Class IRI="#PipedFluidNetworkEdge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pipe"/>
+        <Class IRI="#SubsurfaceSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PipedFluidNetwork"/>
+        <Class IRI="#CRUDNetwork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PipedFluidNetworkEdge"/>
+        <Class IRI="#CRUDRelation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plot"/>
+        <Class IRI="#UrbanSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pond"/>
+        <Class IRI="#BlueSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PotableWaterNetwork"/>
+        <Class IRI="#PipedFluidNetwork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pump"/>
+        <Class IRI="#OpenWaterNetworkEdge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pump"/>
+        <Class IRI="#PipedFluidNetworkEdge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RatioFactor"/>
+        <Class abbreviatedIRI="owl:CRUDFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecreationalSpace"/>
+        <Class IRI="#Space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResidentialBuilding"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#River"/>
+        <Class IRI="#BlueSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Roof"/>
+        <Class IRI="#BuildingElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SandbagBarrier"/>
+        <Class IRI="#FloodDefenseNetworkEdge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SandbagBarrier"/>
+        <Class IRI="#TemporaryFloodDefenseSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SealBuildingAction"/>
+        <Class IRI="#ChangeOrInstallHorizontalDrainageAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeperateSewageNetwork"/>
+        <Class IRI="#SewerNetwork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SewerNetwork"/>
+        <Class IRI="#PipedFluidNetwork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shop"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sidewalk"/>
+        <Class IRI="#PavedWalkWay"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoilType"/>
+        <Class IRI="#SymbolicFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Space"/>
+        <Class IRI="#CRUDContextElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpaceFeaturesModificationAction"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SplitSpaceAction"/>
+        <Class IRI="#ModelStructureModifyingAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StopLogBarrier"/>
+        <Class IRI="#FloodDefenseNetworkEdge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StopLogBarrier"/>
+        <Class IRI="#TemporaryFloodDefenseSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Street"/>
+        <Class IRI="#PavedSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Street"/>
+        <Class IRI="#StreetNetworkEdge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreetNetwork"/>
+        <Class IRI="#CRUDNetwork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreetNetworkEdge"/>
+        <Class IRI="#CRUDRelation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SubsurfaceSpace"/>
+        <Class IRI="#Space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SurfaceFactor"/>
+        <Class abbreviatedIRI="owl:CRUDFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SymbolicFactor"/>
+        <Class abbreviatedIRI="owl:CRUDFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TemporaryFloodDefenseSpace"/>
+        <Class IRI="#FloodDefenceSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThermalInsulationFactor"/>
+        <Class abbreviatedIRI="owl:CRUDFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrainForTemporaryFloodDefenceUseAction"/>
+        <Class IRI="#CapacityBuildingAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UrbanHeatIsland"/>
+        <Class IRI="#UrbanSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UrbanSpace"/>
+        <Class IRI="#Space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VolumeFactor"/>
+        <Class abbreviatedIRI="owl:CRUDFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VolumePerTime"/>
+        <Class IRI="#Flow"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wadi"/>
+        <Class IRI="#GreenSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterSavingAppliance"/>
+        <Class IRI="#BuildingElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterSquare"/>
+        <Class IRI="#PavedSquare"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterStorage"/>
+        <Class IRI="#BuildingElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Waterfall"/>
+        <Class IRI="#Amenity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WetSurfaceAction"/>
+        <Class IRI="#ChangeSpaceCoolingCapacityAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:BackFlow"/>
+        <Class abbreviatedIRI="owl:SystemEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:CloudBurstEvent"/>
+        <Class abbreviatedIRI="owl:RainFallEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:CoastalAndFluvialFloodEvent"/>
+        <Class abbreviatedIRI="owl:FloodEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:CostFactor"/>
+        <Class abbreviatedIRI="owl:CRUDFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:DroughtEvent"/>
+        <Class IRI="#MeteorologicalEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:FloodEvent"/>
+        <Class abbreviatedIRI="owl:SystemEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:GroundWaterFloodEvent"/>
+        <Class abbreviatedIRI="owl:FloodEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:HighTemperatureEvent"/>
+        <Class IRI="#MeteorologicalEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:PluvialFloodEvent"/>
+        <Class abbreviatedIRI="owl:FloodEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:RainFallEvent"/>
+        <Class IRI="#MeteorologicalEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:ReflectionCapacityFactor"/>
+        <Class abbreviatedIRI="owl:CRUDFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Storm"/>
+        <Class IRI="#MeteorologicalEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:SystemEvent"/>
+        <Class IRI="#CRUDHappening"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:TemperatureFactor"/>
+        <Class abbreviatedIRI="owl:CRUDFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:TimeFactor"/>
+        <Class abbreviatedIRI="owl:CRUDFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:WaterStressEvent"/>
+        <Class abbreviatedIRI="owl:SystemEvent"/>
+    </SubClassOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#canApplyGreenRoof"/>
+        <Class IRI="#Building"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#canApplyTemporaryFloodDefences"/>
+        <Class IRI="#Building"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasGreenFacade"/>
+        <Class IRI="#OuterWall"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRoofCoverage"/>
+        <Class IRI="#Roof"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasWaterResistantConstruction"/>
+        <Class IRI="#Building"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#canApplyGreenRoof"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#canApplyTemporaryFloodDefences"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasGreenFacade"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRoofCoverage"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSurface"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWaterResistantConstruction"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Action</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">In this ontology, actions modify modelfeatures. Typically an action will apply to some kind of &apos;space&apos;. Someactions will require a &apos;space&apos; to be subdivided.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Amenity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Elements that contribute to physical or material comfort.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ApplyTemporaryFloodDefenceAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Temporary perimeter flood barriers consist of complete removable components, which are installed following a flood warning and dismounted after the end of a flood period. The temporary flood protection is especially interesting for use in the urban context as it takes less space than a permanent flood protection. Most likely the temporary measures are stored in special locations. Training is needed to build a reliable flood protection in time.
+
+One example are stoplogs: Stoplogs are a hydraulic engineering control element that are used in floodgates to adjust the water level or flow rate in a river, canal, or reservoir. Stoplogs are sometimes confused with flashboards, as both elements are used in bulkhead or crest gates. Stoplogs are typically long rectangular timber beams or boards that are placed on top of each other and dropped into premade slots inside a weir, gate, or channel. Other materials, including steel and composites, can be used as stoplogs as well. Stoplogs are designed to cut off or stop flow through a conduit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BlueSpace</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Areas containing surface water.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Building</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The most important aspects of a building concern their vulnerability to floods, their potential for adaptation to both floods and heat.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BuildingElement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Includes characteristic elements of buildings.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CRUDContextElement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CRUD context elements include all types of elements which make up the CRUD context. Typical examples are physical things like Building, Street, Park ,...</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CRUDNetwork</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CRUDNetwork concern all network type of classes which are relevant to CRUD.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CRUDNetworkVertex</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">In mathematics, and more specifically in graph theory, a vertex (plural vertices) or node is the fundamental unit of which graphs are formed: an undirected graph consists of a set of vertices and a set of edges (unordered pairs of vertices), while a directed graph consists of a set of vertices and a set of arcs (ordered pairs of vertices). In a diagram of a graph, a vertex is usually represented by a circle with a label, and an edge is represented by a line or arrow extending from one vertex to another.
+In CRUD, this class hence represents vertices like (steet)crossings and (pipe) junctions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Canal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Canalrefers to a watercourse or sea passage. The word &apos;channel&apos; is a very general term.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChangeCurbElevationAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A curb (North American English), or kerb (British English), is the edge where a raised sidewalk (pavement in British English) or road median/central reservation meets a street or other roadway.  https://en.wikipedia.org/wiki/Curb 
+Sometimes, a curb can be higher than both the street and the sidewalk, basically providing a barrier for water on streets, avoiding water to enter buildings.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChangeInsulationAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">By using thermal insulation of facades and roofs the temperature rise during hot summer days can be reduced significantly. The climate inside the building will remain pleasant and the air conditioning demand is reduced.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChangeOrInstallHorizontalDrainageAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class includes all actions that change the capacity of inflow and outflow of water to the study area or between parts of the study area.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChangeOrInstallVerticalDrainageAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class includes actions which change the vertical drainage (to the groundwater).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChangePavedCarParkingSizeAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Changing the paved car parking size implies that another spatial feature changes as well. E.g. reducing the size provides room for a park.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChangePumpCapacityAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">By increasing the pump capacity water tables or other volumes of water in sewers can be controlled better. Responding to heavy rains becomes easier, and the chance of flooding is reduced. The need for buffer capacity, translated into low water tables in rivers and channels, is also reduced as the managers have more pumping capacity. Water levels can remain at higher levels which increases the retention capacity of the system in case of droughts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChangeRoadElevationAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The storage on a street can be increased by either lowering the street or hightening the sidewalk. Both actions are relevant as they have a different cost and because the possibilites of both need to be assessed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChangeRoadSizeAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Changing the road size implies that another spatial feature changes as well. E.g. reducing the road size provides room for a wadi.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChangeSewerStorageCapacityAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Increasing the capacity of the sewer system increases the ability of the system to drain excess surface water during heavy rains and prevent flooding.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChangeSideWalkElevationAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The storage on a street can be increased by either lowering the street or hightening the sidewalk. Both actions are relevant as they have a different cost and because the possibilites of both need to be assessed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChangeSoilInfiltrationCapacity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Improving the soil infiltration capacity means improving the permeability of the soil. If the infiltration capacity of the soil is increased, more water will percolate into the soil and less water will runoff directly. This will reduce peak runoff and promoted groundwater recharge.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChangeSpaceInAndOutflowAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class encompasses all actions that change the inflow and outflow to the study area.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChangeStorageOnStreetAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Rain water is usually collected in streets. To reduce probability for flood water to enter buildings the difference between street level and ground floor level can be increased. This way more water can be stored in the street profile without flooding the buildings.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChangeSurfacePermeabilityAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This action is meant for changing e.g. impermeable parking places to permeable parking places.
+
+Permeable paving is a range of sustainable materials and techniques for permeable pavements with a base and sub base that allow the movement of water through the surface. In addition to reducing runoff, this effectively traps suspended solids and filters pollutants in the soil. Besides pavements examples include roads, lawns and lots that are subject to light vehicular traffic, such as parking lots.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChangeSurfaceReflectivenessAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Reflective surfaces are artificially-altered surfaces that can deliver high solar reflectance. This is the ability to reflect the visible, infrared and ultraviolet wavelengths of the sun and reducing heat transfer to the surface. The most well-known type of reflective surface is the cool roof. While it is true that cool roofs are mostly associated with white roofs, they come in a variety of colors and materials and are available for both commercial and residential buildings.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChangeToParkAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Adding green in the streetscape reduces the impact of the heat island effect. Trees provide shade and transform the heat through their capacity of evapotranspiration. This greening can be done by tree lines along streets or by creating parks in the urban area.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChangeToTreesAlongRoadAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Adding green in the streetscape reduces the impact of the heat island effect. Trees provide shade and transform the heat through their capacity of evapotranspiration. This greening can be done by tree lines along streets or by creating parks in the urban area.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChangeToWadiAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A wadi is a naturally designed buffer and infiltration filter. A wadi can be a shallow ditch or depression in the field. The wadi detaches rainwater runoff from streets and rooftops from the traditional sewer system. For the larger part of the year, the wadi remains dry. Only during heavier rain events will the wadi be filled with water. This way clean water is infiltrated into the soil it can be used during drier periods.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChangeToWaterSquareAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This type of square can combine water storage with the improvement of the quality of urban public space. The water square can be understood as a twofold strategy. It makes money invested in water storage facilities visible and enjoyable. It also generates opportunities to create environmental quality and identity to central spaces in neighbourhoods. Most of the time the square can be used as a recreational space. When heavy rains occur, rainwater that is collected from the neighbourhood will flow into the water square for a short times span. After it has been in use as buffering space, the filtered water is returned to the water system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChangeWaterReuseFeatures</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">E.g. use shower water for toilet flushing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChangeWaterSavingAppliances</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">E.g. water saving showers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChangeWaterStorageBelowBuildingAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Large tanks underneath buildings can be used to store rainwater stored captured from the rooftops or along the sides of the building. Gutters and pipelines channel the water to the tank. Filters are used to keep out dirt, debris, leaves and other contaminants. Rainwater storage is able to store runoff during heavy rainfall and provides water in periods of droughts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CombinedSewerSystem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The sewer netwrok in which both rainfall runoff and domestic sewage are transported.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CompositeFactor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A composite factor is a factor based on other base factors.
+
+Examples:
+(Green) Surface per Capita: a criterion relating to well-being</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CountFactor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A counting fact like &apos;number of houses&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Crossing</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A crossing of streets.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DisconnectPavedSurfaceFromSewerSystemAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Disconnecting paved surfaces from sewer system means to reduce the amount of clean runoff water collected in combined sewer systems. Instead of collecting runoff in the sewer, the runoff is transported to surface water, collected for water reuse or infiltrated into the soil. This way the risk of pluvial flooding is reduced.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ditch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A small irrigation channel. In the Dutch context a Ditch typically holds water permanently.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Filter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Any type of filter or sieve that fliters out dirt, or chemicals, etc, relevant both to sewer and drinking water.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FloodDefenceSpace</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">All parts of a flood defense system, containing dikes and levies, but also sandbags.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Fountain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Besides being pleasant, a fountain increases cooling and when placed in e.g. ponds helps to maintain oxygen levels, thus improving water quality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GeoCoordinate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A class representing all relevant subclasses for georeferencesd spatial factors.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HeatStressEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A meteorological high temperature event may cause a heat stress event. High temperature is not necessarily heat stress.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InflatableFloodDefenseConstruction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">These are flood barriers that can be inflated (e.g. with water)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InstallGutterAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A gutter is a non-permeable open drain to collect transport rainwater. Usually a gutter runs along a road. It is connected to either a manhole or a surface water body.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InstallNonReturnValveAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A check valve or non-return valve is installed in pipes which are vulnerable for backflow in flood conditions. Backflow is known to take place in toilets and sewer systems. The valve will block flow if water flows in the “wrong” direction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InstallRainWaterHarvestingAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Rainwater can be harvested in many ways. The most common method is capturing the water on the roof of a building. Although it is not advisable to use rainwater for drinking purposes, it can be used to flush the toilet, clean the car or water the garden. However, a system needs to be installed to capture, store and distribute the water throughout the building. When installed, it will reduce the need for water from the locally provided water supply, and reduce water runoff in the city.
+Harvesting changes outflow only if the water is stored.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Lake</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Trivial.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LevelFactor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The level of something expressed in some hight (e.g. m, cm, mm)
+
+E.g. DesignWaterLevel: The water level that flood defences are designed to withstand. The designwaterlevel is a (hight)value that has been established by e.g. analysing flood return periods and establishes a value above no flood can occur given the analysis. E.g. the designwaterlevel is a value representing a one-in-a-hundred year floodevent, and that this level should be considered in construction and climate adaptation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MassFactor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Used for composite factors relating to water quality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MergeSpaceAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An action in which two spaces are combined, e.g. because both spaces are &apos;parks&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MeteorologicalEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A meteorological event is a weather event. In CRUD, the following are most important: Drought, Heat wave, Rain, Storm, Wind</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ModelStructureModifyingAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A Space refers to a 2D area, such as a square, a building, a park, a paved car park, a district, a plot. Some (climate adaptation) actions will change features of a space, for example changing the surface of a paved car park to become more permeable. Other actions significantly change the space, for example changing half of the car park to a green park. In such a case, instead of combining all features of both the car parking and the park, we prefer to split the space into two spaces, one presenting the park and one reflecting the car park. This SplitSpaceAction implies that the model structure itself will change, e.g. a new element is included in a GracefulContextMap. Likewise, we may need to merge spaces, e.g. two adjacent parks (MergeSpaceAction). As both change the model structure, the parent class is ModelStructureModifyingAction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OpenWaterNetwork</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A network of surface water elements.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OuterWall</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Trivial.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PackSpaceAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The PackSpaceAction concerns packing multiple spatial elements in one Space, for example a park and a car parking space in what formally was a car parking space only.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PackedSpace</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The PackedSpace class contains spaces which are combined, for example a space with 50% park and 50% car parking.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ParkingGarage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Trivial.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PermanentFloodDefenseSpace</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">All fixed flood defense elements.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pipe</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Trivial.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PipedFluidNetwork</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Networks used to transport fluids.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pond</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A smal lake.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PotableWaterNetwork</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The network for drinking water distribution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pump</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Trivial.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RatioFactor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A composite factor is a factor based on other base factors.
+
+Examples:
+(Green) Surface per Capita: a criterion relating to well-being</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RatioFactor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">All types of ratio&apos;s between items with the same unit of measurement, including e.g. a designslope: The designslope is an attribute of for example a gutter, and reflects the capactiy of the gutter for unpressured waterflow.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RecreationalSpace</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The space for recreation, which can be parks, sport utilities (buildings),....</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ResidentialBuilding</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Trivial.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#River</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Trivial.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Roof</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Trivial.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SealBuildingAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The exterior of buildings can be made waterproof to prevent flood water entering the building. All gaps and holes should be sealed below design water level. In case of a flood the building will not be damaged and normal operation can immediately restart after the water has subsided.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SeperateSewageNetwork</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A network consisting of two networks, one for rainfall-runoff and one for sewage. Tyically there is a connection from the rainfall transporting network to the sewer network, such that the first rainfall which is polluted by dirt on the streets is passed to the sewer network, and after some time the rainfall is passed to the reinfall-runoff network.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SewerNetwork</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The network to transport sewage water.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Shop</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Trivial.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SoilType</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">&quot;Sand&quot;, &quot;SIlt&quot;, &quot;Clay&quot;...</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Space</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A Space refers to a 2D area, such as a square, a building, a park, a paved car park, a district, a plot.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SplitSpaceAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An action to split a &apos;Space&apos; in two. E.g. in case a car park needs to be changed into a smaller car park and a park, the actions would be SplitSpaceAction followed by ChangeToParkAction on one of the parts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StopLogBarrier</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Logs that can be used to block for example a gate, avoiding floods.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Street</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Trivial.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StreetNetwork</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The network of streets.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SurfaceFactor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The surface of something, like the surface of a square in m2.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ThermalInsulationFactor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">R-value is a measure of apparent thermal conductivity, and thus describes the rate that heat
+energy is transferred through a material or assembly, regardless of its original source.
+The SI unit for R-value is kelvin square meters per watt (K·m²/W).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TrainForTemporaryFloodDefenceUseAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Temporary flood defences require that the people setting them up are properly trained.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VolumeFactor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Typically expressed in m3. Relevant for all types of water storage.
+
+Important, some volumes are expressed differently, e.g. as mm rainfall which can be stored.
+
+Examples:
+GroundWaterWithdrawels are a factor influencing water scarcity or water stress. Expressed as m3/year. Can be used as criterion.
+This reflects the pressure on water resources. Typically expressed as m3/(capita.year). Can be used as criterion.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wadi</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A wadi is a naturally designed buffer and infiltration filter. A wadi can be a shallow ditch or depression in the field. The wadi detaches rainwater runoff from streets and rooftops from the traditional sewer system. For the larger part of the year, the wadi remains dry. Only during heavier rain events will the wadi be filled with water. This way clean water is infiltrated into the soil it can be used during drier periods.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WaterSavingAppliance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Water saving toilets or showers are typical water saving appliances.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WaterStorage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A water storage can be a water saving appliance in case it is used to replace some water use. Examples are so called &apos;grey water toilets&apos;, that use rainwater stored.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Waterfall</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Besides being pleasant, a fountain increases cooling and when placed in e.g. ponds helps to maintain oxygen levels, thus improving water quality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WetSurfaceAction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A sprinkler system could wet areas like roofs, roads or gardens. The water will evaporate and cool down the air temperature. Other examples are fountains or waterfalls. This measure can be used in densely populated urban areas where the urban heat island effect proves to be a real issue.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#canApplyTemporaryFloodDefences</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This property provides information if e.g. doors and windows can be temporary blocked by sandbags or other constructions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasGreenFacade</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A green facade is a faade whcih is covered with plants. It can help cool a city.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasRoofCoverage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A green roof is a roof which is covered with plants. It absorbes some water and trhough evaporation cools a city.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSurface</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A general data property in square meters.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasWaterResistantConstruction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A water resistant construction is built from material that allows was restarting of operations after a flood. It concenrs both the inside and outside of a building.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:BackFlow</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Backflow occurs if for example a SewerSystems capacity is insufficient. Backflow is known to take place in toilets and sewer systems. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:CloudBurstEvent</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Special case of rain event in which in very short time excessive amounts of rain precipitate.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:CoastalAndFluvialFloodEvent</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">A coastal and fluvial flood is a flood which occurs when riverwater or sea water rises above certain levels (e.g. the level overtopping flood defences) due to extraordinary river runoff or sea levels, or if flood infrastrucutre is breached. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:CostFactor</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Expressed in monetary unit.
+
+Used for, a.o.
+
+CapitalDroughtDamages CapitalDroughtDamages are the total costs for recovery of capital, typically expressed in €/event. Can be used as criterion.
+
+CapitalFloodDamages: CapitalFloodDamages are the total costs for recovery of capital, typically expressed in €/event. Can be used as criterion.
+
+DemolitionCost: The costs to demolish a piece of infrastrucutre (€)
+
+ImplementationCostOfAction: Implementation costs (€) concern the cost of a specific action. Can be used as criterion.
+
+ImplementationCostOfAlternative: Implementation costs (€) concern the cost of an alternative (set of actions). Can be used as criterion.
+
+LostProductionTimeCost: Cost associated by a business not being able to produce or sell (€).
+
+LostWorkingTimeCost: Cost associated with an employee not being able to work (€).
+
+RepairCost: The cost to restore a situation after a ClimateChange event (€).
+
+LifeCycleCostOfAction: The total lifecycle cost of an action (€). Can be used as criterion.
+
+LifeCycleCostOfAlternative: The total lifecycle cost of an alternative (€). Can be used as criterion.
+
+TotalOperationAndMaintenanceCost: The costs per year of operating /maintaining an action €/year. Can be used as criterion.
+
+Investment capacity as total value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:DroughtEvent</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Prolongued period without significant precipitation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:GroundWaterFloodEvent</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Groundwater flooding occurs when the water table in permeable rocks rises to enter basements/cellars or comes up above the ground surface. Groundwater flooding is not necessarily linked directly to a specific rainfall event and is generally of longer duration than other causes of flooding (possibly lasting for weeks or even months). (British Geological Survey website)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:HighTemperatureEvent</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Typically a metrological high pressure zone with high intensity sunshine.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:PluvialFloodEvent</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">A pluvial flooding even is a flood event caused by excessive rainfall.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:RainFallEvent</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Trivial.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:ReflectionCapacityFactor</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">The capacity of a surface to reflect incoming sunlight (all types of wavelength). Typically within design some classificatin will be used.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:Storm</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Storm events may cause coastal flood events.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:SystemEvent</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The SystemEvent class contains all events within the urban system which are caused directly or indirectly by a MeteorologicalEvent. Examples are a PluvialFloodEvent caused by RainFallEvent, or HeatStressEvent caused by a HighTemperatureEvent. Indirectly, a RainFallEvent may cause a PluvialFloodEvent because of a BackFlowEvent, e.g. due to in clogging or insufficient capacity of a sewer. Many more indirect events can be identified, however it needs to be seen how relevant they will be as building blocks of a GCM.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:SystemEvent</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The term SystemEvent is defined here as major events affecting the urban system. Other than meteorological events, people can act on these events.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:TemperatureFactor</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">In degrees Celcius and used for example for assessing heat islands and heat stress.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:TimeFactor</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Something in seconds, minutes, hours</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:WaterStressEvent</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Other than the DroughtEvent, the WaterStressEvent occurs if there is a shortage of water of appropriate quality for for a function, e.g. a shortage of potable water, a shortage of water for ecological functions. </Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
